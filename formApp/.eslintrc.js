@@ -22,5 +22,8 @@ module.exports = {
   },
   ignorePatterns: ['eslintrc.js'],
   plugins: ['react'],
-  rules: {},
+  rules: {
+    semi: 'off',
+    'no-unused-vars': 'error',
+  },
 };

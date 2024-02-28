@@ -1,13 +1,9 @@
-import React from 'react'
-import { View } from 'react-native'
-import { Text } from 'react-native-paper'
+import React from 'react';
+import { View } from 'react-native';
+import NavigatorContainer from '../../navigator/NavigatorContainer';
 
 const Main: React.FC = () => {
-  return (
-    <View>
-      <Text>Main</Text>
-    </View>
-  )
-}
+  return <NavigatorContainer />;
+};
 
-export default Main
+export default Main;
