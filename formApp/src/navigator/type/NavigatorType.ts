@@ -1,5 +1,5 @@
-import { RouteProp } from '@react-navigation/native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import type { RouteProp } from '@react-navigation/native';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 export type RootStackParamList = {
   SignupScreen: undefined;
@@ -28,3 +28,9 @@ export type DetailsScreenRouteProp = RouteProp<
   RootStackParamList,
   'DetailsScreen'
 >;
+declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  namespace ReactNavigation {
+    interface RootParamList extends RootStackParamList {}
+  }
+}

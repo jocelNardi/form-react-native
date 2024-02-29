@@ -2,10 +2,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import SignupScreen from '../container/signup/SignupScreen';
-import { RootStackParamList } from './type/NavigatorType';
 import DetailsScreen from '../container/details/DetailsScreen';
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator();
 
 const NavigatorContainer: React.FC = () => {
   return (
